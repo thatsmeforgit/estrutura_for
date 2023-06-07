@@ -1,7 +1,6 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 public class caraoucoroa {
     public static void main(String[] args){
     
-        int i ,
     }
 }
