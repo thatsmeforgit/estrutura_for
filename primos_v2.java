@@ -14,7 +14,7 @@ public class primos_v2 {
         //process & out
         eh_primo = true;
         for (i=1;i<valor;i++){
-            if(valor%2==0){
+            if(valor%i==0){
                 eh_primo = false;
                 System.out.println("Não é primo.");
                 break;

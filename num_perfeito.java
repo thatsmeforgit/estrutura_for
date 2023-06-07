@@ -15,20 +15,25 @@ public class num_perfeito {
     public static void main(String[] args){
     //var
     Scanner sc = new Scanner(System.in);  
-    int i = 0, n = 0 , ndiv;
-
+    int i = 0, n = 0, soma = 0;
     //in
     System.out.println("Digite um valor: ");
     n = sc.nextInt();
     sc.close();
 
     //process & out
-    ndiv = 0;
     for(i=1; i<n ; i++){
-       if(n%2==0){
-        ndiv++;
-       } 
+       if(n%i==0){ 
+        soma = soma + i;
+       }    
     }
-    System.out.printf("Numero de divisores: %d\n",ndiv);
+    
+    System.out.printf("Soma dos divisores = %d\n", soma);
+    
+    if(soma == n){
+        System.out.println("É um número perfeito.");
+    } else {
+        System.out.println("Não é um número perfeito.");
+    }
     }
 }
