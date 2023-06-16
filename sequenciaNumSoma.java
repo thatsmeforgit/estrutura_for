@@ -19,7 +19,7 @@ public class sequenciaNumSoma {
         //variables
         int m = 1;
         int n = 1;
-        int cont = 0;
+        int i = 0;
         int soma = 0;
 
         //in
@@ -30,20 +30,19 @@ public class sequenciaNumSoma {
             n = sc.nextInt();
 
             if(n<m){
-                for(cont=n;cont<=m;cont++){
-                    System.out.println(cont); 
-                    soma = soma+cont;
+                for(i=n;i<=m;i++){
+                    System.out.println(i); 
+                    soma =soma+i;
             }
             } else if(m<n){
-                for(cont=m;cont<=n;cont++){
-                    System.out.println(cont);
-                    soma = soma+cont;
+                for(i=m;i<=n;i++){
+                    System.out.println(i);
+                    soma = soma+i;
                 }
             }
             System.out.printf("Sum=%d\n",soma);
         }
         sc.close();
-
     }
  
 }
